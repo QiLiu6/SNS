@@ -1,0 +1,13 @@
+path_to_ics: "/scratch/ql2221/thermalizer_data/kolmogorov/reynold10k/Long_numerical_rollout.p"
+path_to_emu_checkpoint: "/scratch/ql2221/thermalizer_data/wandb_data/wandb/run-20251028_103612-lmys64ex/files/checkpoint_best.p"
+path_to_CT_checkpoint: "/scratch/ql2221/thermalizer_data/wandb_data/wandb/run-20251117_121401-tgz3mmhq/files/checkpoint_last.p"
+n_steps: [10000,10000,10000,10000]
+run_by_batch: False
+total_batch_num: 1
+emu_chunk_size: 10000
+subsample_in_time_factor: 1
+short_lag: 2
+long_lag: 100
+s: 15
+silence: True
+Regression: True

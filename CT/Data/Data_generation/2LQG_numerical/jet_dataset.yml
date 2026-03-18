@@ -1,0 +1,30 @@
+model:
+  nx: 256
+  dt: 3600.0
+  L: 1000000.0
+  beta: 1.0e-11
+  rek: 7.0e-08
+  delta: 0.1
+  rd: 15000.0
+  U1: 0.025
+  U2: 0.0
+
+run:
+  tavestart: 3110400000.0
+
+dataset:
+  n_traj: 1
+  n_samples_from_one_traj: 1
+
+  spatial_downsample_factor: 4   # 256 -> 64
+  Dt: 36000.0                    # must be multiple of dt
+  rollout_length: 50000
+  decorrelation_time: 0   # keep what you want
+
+perturbation:
+  seed: 0
+  amplitude: 1.0e-7
+
+output:
+  outpath: "/scratch/ql2221/PDE_data/2LQG/jet/"
+  dtype: "float32"

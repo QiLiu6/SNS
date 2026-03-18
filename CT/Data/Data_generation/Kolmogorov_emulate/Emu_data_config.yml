@@ -1,0 +1,7 @@
+path_to_ics: "/scratch/ql2221/thermalizer_data/kolmogorov/reynold10k/Flow_training_num_data_combined.p"
+path_to_emu_checkpoint: "/scratch/ql2221/thermalizer_data/wandb_data/wandb/run-20251028_103612-lmys64ex/files/checkpoint_best.p"
+n_steps: [6500,6000]
+run_by_batch: True
+total_batch_num: 10
+emu_chunk_size: 220
+subsample_in_time_factor: 25
